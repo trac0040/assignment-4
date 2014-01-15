@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/* Responsive Setup */
+
+@-moz-viewport { width: device-width; scale: 1;}
+@-ms-viewport { width: device-width; scale: 1;}
+@-webkit-viewport { width: device-width; scale: 1;}
+@-o-viewport { width: device-width; scale: 1;}
+@viewport { width: device-width; scale: 1;}
+
+html{
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-o-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+html, body{
+	font-family:Arial, Helvetica, sans-serif;
+	margin:0;
+	padding:0;
+	width:100%;
+}
+
+h1,
+main,
+.copyright{
+	width:95%;
+	margin:1rem auto;
+}
+
+img{
+	width: 100%;
+}
+
+nav li {
+	display:block;
+	float:left;
+	margin-bottom:0.5em;
+	width:50%;
+}
+
+.nav a, 
+.nav a:link,
+.nav a:visited{
+	display:block;
+	padding:0.5rem;
+	text-align:center;
+	color:#fff;
+	text-decoration:none;
+	background-color:#000;
+}
+	
+.nav a:hover,
+.nav a:focus,
+.nav a:active{
+	background-color:#333;
+}
+
+/*--------------------navigation----------------------*/
+
+@media only screen and (min-width: 30em){
+	
+	.nav a, 
+	.nav a:link,
+	.nav a:visited{
+		border-top:0;
+	}
+	
+	.nav-top{
+		float:right;
+		margin-top:1em;
+		width:35%;
+	}
+	
+	h1{
+		float:left;
+		width:auto;
+		margin-left:2.5%;	
+	}
+	
+	header{
+		overflow:auto;
+	}
+}
+
+/*----------------------homepage----------------------*/
+
+@media only screen and (min-width: 34em){
+	.info{
+		float:left;
+		width:40%;
+	}
+	.intro{
+		float:right;
+		width:55%;
+	}	
+	main{
+		overflow:auto;
+	}	
+}
+
+dt{
+	font-weight:bold;
+}
+
+strong{
+	font-weight:bold;
+}
+
+td,
+th{
+	text-align:center;
+	vertical-align:middle;
+	border:1px solid #666;
+	font-size:100%;
+	padding:4px;
+}
+
+th{
+	background-color:#999;
+}
+
+.weekday{
+	background-color:#000;
+	color:#FFF;
+}
+
+/*-------------------------Schedule-------------------*/
+
+@media only screen and (min-width: 30em){
+	.col{
+		width:47.5%;
+	}
+	.left{
+		float:left;
+	}
+	.right{
+		float:right;
+	}	
+	main{
+		overflow:auto;
+	}
+}
+
+/*  --------------------------Prices------------------*/
+
+.prices-table{
+	display:none;
+}
+
+.prices-list{
+	display:block;
+}
+
+@media only screen and (min-width: 30em){
+	
+	.prices-table{
+		display:block;
+	}
+	.prices-list{
+		display:none;
+	}
+}
+
